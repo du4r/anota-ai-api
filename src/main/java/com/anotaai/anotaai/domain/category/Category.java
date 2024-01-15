@@ -19,4 +19,10 @@ public class Category {
     private String description;
 
     private String ownerId;
+
+    public Category(CategoryDTO data){
+        this.title = data.title();
+        this.description = data.description();
+        ownerId = data.ownerId();
+    }
 }

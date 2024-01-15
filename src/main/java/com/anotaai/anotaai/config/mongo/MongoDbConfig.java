@@ -15,6 +15,6 @@ public class MongoDbConfig {
     }
     @Bean
     public MongoTemplate mongoTemplate(){
-
+        return new MongoTemplate(mongoConfigure());
     }
 }
